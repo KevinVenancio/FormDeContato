@@ -1,0 +1,100 @@
+:root {
+    --fonte-principal: 'Montserrat', sans-serif;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --azul-claro: #6BD1FF;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    font-size: 1rem;
+}
+
+.cabecalho {
+    padding: 4.5rem;
+    background-color: #000000;
+}
+
+.formulario {
+    margin: 3rem auto;
+    width: 30vw;
+}
+
+.formulario__container {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.formulario__campo {
+    margin-bottom: 2rem;
+}
+
+.formulario__titulo-texto {
+    margin: 1rem 0;
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+}
+
+.campo__etiqueta {
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.campo__escrita {
+    display: block;
+    border: 2px solid var(--azul-claro);
+    border-radius: 1.25rem;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.termos__texto {
+    line-height: 1.25rem;
+    display: inline;
+}
+
+.formulario__botao {
+    background: var(--azul-claro);
+    margin: 2rem auto;
+    display: block;
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 1.875rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: var(--branco);
+}
+
+.mensagem-erro {
+    color: red;
+}
+
+.rodape {
+    background-color: var(--preto);
+    padding: 8rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .formulario {
+        width: 70%;
+    }
+
+    .formulario__texto {
+        margin: 0;
+    }
+
+    .container {
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .cabecalho, .rodape{
+        padding: 5rem;
+    }
+}
+
